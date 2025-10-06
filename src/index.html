@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iVideo - 您的专属视频平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-play-circle"></i>
+                <span>iVideo</span>
+            </div>
+    <div class="nav-menu">
+        <a href="#" class="nav-link active">首页</a>
+        <div class="dropdown nav-dropdown">
+            <a href="#" class="nav-link">视频分类 <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#" class="category-link">电影</a>
+                <a href="#" class="category-link">电视剧</a>
+                <a href="#" class="category-link">综艺</a>
+                <a href="#" class="category-link">纪录片</a>
+                <a href="#" class="category-link">动漫</a>
+            </div>
+        </div>
+        <a href="#" class="nav-link">最近添加</a>
+        <a href="#" class="nav-link">我的列表</a>
+    </div>
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索影片..." id="searchInput">
+            </div>
+            <div class="nav-user">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=32&h=32&fit=crop&crop=face" alt="用户头像">
+                <div class="dropdown">
+                    <i class="fas fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">账户</a>
+                        <a href="#">帮助中心</a>
+                        <a href="#">登出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主横幅 -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1 class="banner-title">Big Buck Bunny</h1>
+            <p class="banner-description">经典的开放源码动画短片，讲述一只大兔子和三只小动物的故事。这部由Blender基金会制作的动画展示了开源3D动画制作的强大能力。</p>
+            <div class="banner-buttons">
+                <button class="btn btn-play" id="bannerPlayBtn">
+                    <i class="fas fa-play"></i> 立即播放
+                </button>
+                <button class="btn btn-info">
+                    <i class="fas fa-info-circle"></i> 更多信息
+                </button>
+            </div>
+        </div>
+        <div class="banner-fade"></div>
+    </section>
+
+    <!-- 内容行容器 -->
+    <section class="content-rows" id="contentRows">
+        <!-- 内容将通过JavaScript动态生成 -->
+    </section>
+
+    <!-- 视频播放器模态框 -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="video-info">
+                <h2 id="videoTitle">视频标题</h2>
+                <p id="videoDescription">视频描述</p>
+                <div class="video-meta">
+                    <span id="videoAuthor"></span>
+                    <span id="videoViews"></span>
+                    <span id="videoUploadTime"></span>
+                </div>
+            </div>
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    您的浏览器不支持视频播放。
+                </video>
+                <div class="quality-selector" id="qualitySelector">
+                    <!-- 清晰度选项将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-play-circle"></i>
+                <span>iVideo</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">联系方式</a>
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">帮助中心</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer-copyright">© 2023 iVideo. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* 平板设备 */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .banner {
+        height: 60vh;
+        padding: 0 30px;
+    }
+    
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    
+    .content-rows {
+        padding: 20px 30px;
+    }
+    
+    .card {
+        min-width: 180px;
+        height: 250px;
+    }
+}
+
+/* 手机设备 */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .nav-search input {
+        width: 150px;
+    }
+    
+    .banner {
+        height: 50vh;
+        padding: 0 15px;
+        margin-top: 60px;
+    }
+    
+    .banner-title {
+        font-size: 1.8rem;
+    }
+    
+    .banner-description {
+        font-size: 1rem;
+    }
+    
+    .content-rows {
+        padding: 15px 15px;
+    }
+    
+    .card {
+        min-width: 140px;
+        height: 200px;
+    }
+    
+    .modal-content {
+        width: 95%;
+    }
+    
+    .footer {
+        padding: 30px 15px 15px;
+    }
+    
+    .footer-links {
+        gap: 10px;
+    }
+}
